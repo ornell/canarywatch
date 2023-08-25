@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: canarywatch-config
+data:
+  checkInterval: {{ .Values.config.checkInterval | quote }}
+  maxEventRate: {{ .Values.config.maxEventRate | quote }}

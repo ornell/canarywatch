@@ -1,0 +1,7 @@
+image:
+  repository: gcr.io/ornell-211321/canarywatch/canarywatch
+  tag: latest
+  pullPolicy: Always
+config:
+  checkInterval: "1"
+  maxEventRate: "10"

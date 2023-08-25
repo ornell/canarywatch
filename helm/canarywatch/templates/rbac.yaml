@@ -1,0 +1,21 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: canarywatch-role
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "nodes", "events", "configmaps"]
+    verbs: ["get", "list", "watch", "create"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: canarywatch-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: canarywatch-role
+subjects:
+  - kind: ServiceAccount
+    name: canarywatch-sa
+    namespace: canarywatch

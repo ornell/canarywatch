@@ -1,7 +1,3 @@
-############################################
-###           CanaryWatch README         ###
-############################################
-
 CanaryWatch - Monitoring connectivity issues inside your Kubernetes cluster.
 
 Description:
@@ -29,9 +25,8 @@ For support, issues, or feature requests, please file an issue on the project's 
 
 License:
 --------
-[Your License Here]
+MIT
 
 Credits:
 --------
-Developed by [Your Name/Organization]
-
+Developed by Thomas Ornell
